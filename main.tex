@@ -1,0 +1,99 @@
+\documentclass[]{article}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[shortlabels]{enumitem}
+\usepackage[spanish]{babel}
+\usepackage[font=footnotesize,labelfont=small]{caption}
+\usepackage[margin=1in]{geometry}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage{csquotes}
+\usepackage{amsmath,mleftright}
+\usepackage{mathtools}
+\usepackage{xparse}
+\usepackage{changepage}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{appendix}
+\usepackage{caption}
+\usepackage{graphicx} 
+\usepackage{gensymb}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{physics}
+\usepackage[version=3]{mhchem}
+\usepackage{upgreek}
+\usepackage{subcaption}
+\usepackage{txfonts}
+\usepackage{lipsum}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = blue,
+    filecolor = magenta,
+    urlcolor = cyan,
+}
+
+\newcommand{\horizontalspace}{\;\;\;\;\;}
+\setlength{\textfloatsep}{1\baselineskip plus 0.2\baselineskip minus 0.2\baselineskip}
+
+\DeclareGraphicsExtensions{.pdf,.png}
+
+\begin{document}
+
+\begin{center}																	
+\vspace{1.5cm}
+\textsc{\LARGE TÍTULO}\\[1cm]
+
+\noindent\hrulefill 
+\vspace{0.5cm}
+
+
+{ \large \bfseries N. Arcuschin Moreno, P. Martinez Garbino, V. Raspa, P. J. Cobelli}
+\vspace{0.1cm}
+\vspace{0.2cm}
+{
+    Informe de avance \\
+    Fecha: 15/08/2024
+}
+\vspace{0.2cm}
+
+Laboratorio 6 - 1er Cuatrimestre 2024\\
+Departamento de Física, FCEyN, UBA
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent\hrulefill 
+\vspace{0.5cm}
+\renewcommand{\tablename}{Tabla}
+\setcounter{footnote}{0}
+
+\begin{multicols}{2}
+\noindent
+
+\section{Introducción}
+
+\input{introduccion.tex}
+
+\section{Desarrollo experimental}
+
+\input{setup_experimental.tex}
+
+\section{Resultados y análisis}
+
+\input{resultados.tex}
+
+\section{Conclusión}
+
+\input{conclusion.tex}
+
+\vspace{-0.5em}
+
+\printbibliography
+
+\section*{Apéndice}
+
+
+\end{multicols}
+
+\end{document}
